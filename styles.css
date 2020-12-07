@@ -3,7 +3,9 @@ body {
   background-image: url("images/bg-pattern-bottom.svg"),
     url("images/bg-pattern-top.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 125% -42%, -41% 55%;
+  /* background-position: 125% -42%, -41% 55%; not responsive*/
+  /* background-position: left 50vw top 50vh, right 52vw bottom -65vh; */
+  background-position: left 40vw top 50vh, right 40vw bottom -50vh;
   font-family: "Kumbh Sans", sans-serif;
   color: hsl(227, 10%, 46%);
   font-size: 18px;
@@ -50,6 +52,8 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 40px 50px -10px hsl(185, 75%, 35%),
+    -20px 0 50px -10px hsl(185, 75%, 35%), 20px 0 50px -10px hsl(185, 75%, 35%);
 }
 
 .content {
@@ -111,4 +115,10 @@ footer {
 
 a:hover {
   color: hsl(229, 23%, 23%);
+}
+
+@media (min-width: 441px) {
+  body {
+    background-position: left 50vw top 50vh, right 52vw bottom -65vh;
+  }
 }
