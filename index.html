@@ -20,32 +20,34 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card-bg"></div>
-      <img src="images/image-victor.jpg" alt="Victor Crest" />
-      <div class="content">
-        <ul class="name">
-          <li>Victor Crest <span>26</span></li>
-          <li id="city">London</li>
-        </ul>
-        <div class="popularity">
-          <ul>
-            <li>80K</li>
-            <li>Followers</li>
-          </ul>
+    <main>
+      <div class="card__container">
+        <img
+          class="card__image"
+          src="images/image-victor.jpg"
+          alt="Victor Crest"
+        />
+        <h1 class="card__name">Victor Crest <span>26</span></h1>
+        <p class="card__city">London</p>
 
-          <ul>
-            <li>803K</li>
-            <li>Likes</li>
-          </ul>
+        <div class="card__credentials">
+          <div class="card__credentials-wrapper">
+            <p class="card__credentials-top">80K</p>
+            <p class="card__credentials-bottom">Followers</p>
+          </div>
 
-          <ul>
-            <li>1.4K</li>
-            <li>Photos</li>
-          </ul>
+          <div class="card__credentials-wrapper">
+            <p class="card__credentials-top">803K</p>
+            <p class="card__credentials-bottom">Likes</p>
+          </div>
+
+          <div class="card__credentials-wrapper">
+            <p class="card__credentials-top">1.4K</p>
+            <p class="card__credentials-bottom">Photos</p>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer>
       Challenge by
@@ -55,3 +57,37 @@
     </footer>
   </body>
 </html>
+
+<!-- <div class="container">
+  <div class="card-bg"></div>
+  <img src="images/image-victor.jpg" alt="Victor Crest" />
+  <div class="content">
+    <ul class="name">
+      <li>Victor Crest <span>26</span></li>
+      <li id="city">London</li>
+    </ul>
+    <div class="popularity">
+      <ul>
+        <li>80K</li>
+        <li>Followers</li>
+      </ul>
+
+      <ul>
+        <li>803K</li>
+        <li>Likes</li>
+      </ul>
+
+      <ul>
+        <li>1.4K</li>
+        <li>Photos</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by Lisa Meister.
+</footer> -->
